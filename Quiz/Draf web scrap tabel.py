@@ -12,7 +12,7 @@ data = bs(html, 'html.parser')
 table = data.find("table", {"class":"wikitable sortable"})
 rows = table.findAll("tr")
 
-kolom = [i.text.replace('\n','') for i in rows[0].find_all('th')]
+kolom = [i.text.replace('\n','') for i in rows[0].findAll('th')]
 
 hasil = []
 for row in rows[1:]:
