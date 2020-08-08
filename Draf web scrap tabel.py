@@ -21,5 +21,5 @@ for row in rows[1:]:
     hasil.append(info)
 
 df = pd.DataFrame(hasil , columns=kolom)
-df.to_csv("pokedex.csv",index=False)
-print(df)
+#df.to_csv("pokedex.csv",index=False)
+print(df.head())

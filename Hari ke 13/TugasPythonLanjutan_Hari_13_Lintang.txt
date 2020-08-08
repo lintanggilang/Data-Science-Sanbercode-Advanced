@@ -1,0 +1,8 @@
+NAMA : LINTANG GILANG PRATAMA
+EMAIL : lintang.gilang01@gmail.com
+
+SELECT albums.Title, artists.Name, tracks.Name 
+FROM albums
+JOIN artists ON albums.ArtistId = artists.ArtistId
+JOIN tracks ON albums.AlbumId = tracks.AlbumId
+WHERE artists.Name = "Aerosmith" OR (artists.Name = "AC/DC" AND albums.Title = "Let There Be Rock")
